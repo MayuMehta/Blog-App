@@ -1,5 +1,5 @@
 function newsApi(){
-    fetch('https://newsapi.org/v2/everything?q=tesla&from=2024-03-15&sortBy=publishedAt&apiKey=fb59993f737d45deb07afe4cf6f756d0')
+    fetch('https://newsapi.org/v2/top-headlines?country=in&apiKey=fb59993f737d45deb07afe4cf6f756d0')
     .then(response => {
         if (response.ok) {
         return response.json(); 

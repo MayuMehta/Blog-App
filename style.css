@@ -1,14 +1,17 @@
+
 #navbarNav nav-item:hover{
     color: blue;
 }
 label{
     font-size: 20px;
+    font-weight: 500;
 }
-input{
+input[type=text],textarea{
     width: 100%;
     padding: 5px;
     border-radius: 10px;
     border: 1px solid black;
+    background: #dcc5c5de;
 }
 .blog-container{
     display: flex;
@@ -16,11 +19,11 @@ input{
     align-items: center;
 }
 .blog-form{
-    /* width: 50%; */
+    width: 80%;
     padding: 20px;
     background: #dbd4d491;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(241, 238, 238, 0.824);
+    box-shadow: 0 0 10px #dbd4d491;
 }
 .title{
     color:red;
