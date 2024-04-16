@@ -14,7 +14,7 @@ function newsApi(){
         articles.slice(0,10).map((value)=>{
             article+=`
             <div class="card mb-3" style="width: 22rem;">
-                <img src="${value.urlToImage}" class="card-img-top" height="50%">
+                <img src="${value.urlToImage}" class="card-img-top" height="50%" alt="image.jpg">
                 <div class="card-body">
                     <p class="text-success">Published : ${value.publishedAt}</p>
                   <h5 class="card-title">${value.title}</h5>
