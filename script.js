@@ -1,5 +1,6 @@
 function newsApi(){
-    fetch('https://newsapi.org/v2/top-headlines?country=in&apiKey=fb59993f737d45deb07afe4cf6f756d0')
+    var api='https://newsapi.org/v2/everything?q=tesla&from=2024-10-07&sortBy=publishedAt&apiKey=fb59993f737d45deb07afe4cf6f756d0'
+    fetch(api)
     .then(response => {
         if (response.ok) {
         return response.json(); 
@@ -9,7 +10,7 @@ function newsApi(){
     })
     .then(data => {
         let articles=data.articles;
-        let article="";
+        let article=""; 
         console.log(data);
         articles.slice(0,10).map((value)=>{
             article+=`
